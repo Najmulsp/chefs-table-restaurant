@@ -1,4 +1,4 @@
-
+// import bg from '../../assets/bg.jpg';
 
 const Header = () => {
     return (
@@ -42,7 +42,8 @@ const Header = () => {
  <div className="bg-[url('../../assets/banner image.jpeg')] w-full border h-96"> 
 </div> */}
 
- {/* <div className="hero min-h-screen bg-[linear-gradient(45deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(../../assets/banner image.jpeg)]" style="  ">
+  <div className="hero w-1/2 h-screen bg-no-repeat bg-cover bg-center" style={{ "backgroundImage: url('../../assets/bg.jpg'),height: 400px"}}>
+//  "background-image: url('...'); height: 400px"
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
@@ -52,7 +53,7 @@ const Header = () => {
       <button className="btn btn-primary">Our Feedback</button>
     </div>
   </div>
-</div> */}
+</div> 
 
         </div>
     );

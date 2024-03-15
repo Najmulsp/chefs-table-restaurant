@@ -3,7 +3,7 @@
         "recipe_image": "https://i.ibb.co/vdP14Tb/best-salad.jpg",
         "recipe_id": 1,
         "recipe_name": "Family Favorite Salad Recipe!",
-        "short_description": "A delicious chicken dish with a savory soy sauce glaze and sautéed mushrooms.",
+        "description": "A delicious chicken dish with a savory soy sauce glaze and sautéed mushrooms.",
         "ingredients": [
             "550 g chicken",
             "120 ml soy sauce",
@@ -17,7 +17,7 @@
         "recipe_image": "https://i.ibb.co/YNMg2J6/healthy-fruits.jpg",
         "recipe_id": 2,
         "recipe_name": "Healthy Fruits That Are Super Nutritious",
-        "short_description": "All fruit offer health benefits, so include as much variety as possible.",
+        "description": "All fruit offer health benefits, so include as much variety as possible.",
         "ingredients": [
             "400 g spaghetti",
             "150 g fresh basil leaves",

@@ -1,6 +1,8 @@
+import PropTypes from 'prop-types';
 
-
-const Recipe = () => {
+const Recipe = ({recipe}) => {
+    const {recipe_image, recipe_name, description} = recipe;
+    console.log(recipe);
     return (
         <div className="space-y-6">
             <h1 className="text-4xl font-semibold">Our Recipes</h1>
@@ -8,10 +10,10 @@ const Recipe = () => {
             <div className="flex flex-col lg:flex-row gap-8 border border-rose-600">
             <div className="grid grid-cols-1 lg:grid-cols-2 border border-amber-400 w-3/5 bg-amber-100">
                     <div className="card card-compact w-80 bg-base-100     shadow-xl">
-                        <figure><img className="p-1 rounded-xl " src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                        <figure><img className="p-1 rounded-xl " src={recipe_image} alt="Shoes" /></figure>
                     <div className="card-body text-left">
-                        <h2 className="card-title">Spaghetti Bolognese</h2>
-                        <p>Classic Italian pasta dish with savory meat sauce.</p>
+                        <h2 className="card-title">{recipe_name}</h2>
+                        <p>{description}dfgd</p>
                         <hr />
                         <p className="text-xl font-medium">Ingredients: 6</p>
                         <ul className="list-disc pl-4">
@@ -109,4 +111,7 @@ const Recipe = () => {
     );
 };
 
+Recipe.propTypes = {
+    recipe: PropTypes.object.isRequired
+}
 export default Recipe;
