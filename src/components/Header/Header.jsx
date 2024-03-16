@@ -1,4 +1,4 @@
-// import bg from '../../assets/bg.jpg';
+//  import bg from '../../assets/bg.jpg';
 
 const Header = () => {
     return (
@@ -42,15 +42,17 @@ const Header = () => {
  <div className="bg-[url('../../assets/banner image.jpeg')] w-full border h-96"> 
 </div> */}
 
-  <div className="hero w-1/2 h-screen bg-no-repeat bg-cover bg-center" style={{ "backgroundImage: url('../../assets/bg.jpg'),height: 400px"}}>
-//  "background-image: url('...'); height: 400px"
+<div className="hero min-h-screen bg-[url(https://i.ibb.co/y0mgRw2/bg.jpg)] mt-8 " >
+  {/* "background-image: url('...'); height: 400px"
+  style="background-image: url(https://i.ibb.co/y0mgRw2/bg.jpg);"
+  */}
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
       <h1 className="mb-5 text-5xl font-bold">Discover an exceptional cooking class tailored for you!</h1>
       <p className="mb-5">Savor the essence of Ramadan with our delicious iftar platters! Let our culinary creations add joy and warmth to your iftar gatherings</p>
       <button className="btn btn-primary bg-green-400">Explore Now</button>
-      <button className="btn btn-primary">Our Feedback</button>
+      <button className="btn btn-primary ml-6">Our Feedback</button>
     </div>
   </div>
 </div> 

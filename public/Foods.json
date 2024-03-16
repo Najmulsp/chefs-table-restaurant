@@ -1,6 +1,6 @@
 [
     {
-        "recipe_image": "https://i.ibb.co/vdP14Tb/best-salad.jpg",
+        "recipe_image": "https://i.ibb.co/YNMg2J6/healthy-fruits.jpg",
         "recipe_id": 1,
         "recipe_name": "Family Favorite Salad Recipe!",
         "description": "A delicious chicken dish with a savory soy sauce glaze and sautéed mushrooms.",
@@ -16,6 +16,34 @@
     {
         "recipe_image": "https://i.ibb.co/YNMg2J6/healthy-fruits.jpg",
         "recipe_id": 2,
+        "recipe_name": "Healthy Fruits That Are Super Nutritious",
+        "description": "All fruit offer health benefits, so include as much variety as possible.",
+        "ingredients": [
+            "400 g spaghetti",
+            "150 g fresh basil leaves",
+            "50 g pine nuts",
+            "100 g Parmesan cheese"
+        ],
+        "preparing_time": "25 min",
+        "calories": "580 calories"
+    },
+    {
+        "recipe_image": "https://i.ibb.co/YNMg2J6/healthy-fruits.jpg",
+        "recipe_id": 3,
+        "recipe_name": "Healthy Fruits That Are Super Nutritious",
+        "description": "All fruit offer health benefits, so include as much variety as possible.",
+        "ingredients": [
+            "400 g spaghetti",
+            "150 g fresh basil leaves",
+            "50 g pine nuts",
+            "100 g Parmesan cheese"
+        ],
+        "preparing_time": "25 min",
+        "calories": "580 calories"
+    },
+    {
+        "recipe_image": "https://i.ibb.co/YNMg2J6/healthy-fruits.jpg",
+        "recipe_id": 4,
         "recipe_name": "Healthy Fruits That Are Super Nutritious",
         "description": "All fruit offer health benefits, so include as much variety as possible.",
         "ingredients": [
