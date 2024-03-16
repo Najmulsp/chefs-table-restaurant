@@ -16,7 +16,7 @@
     {
         "recipe_image": "https://i.ibb.co/YNMg2J6/healthy-fruits.jpg",
         "recipe_id": 2,
-        "recipe_name": "Healthy Fruits That Are Super Nutritious",
+        "recipe_name": "Healthy Fruits That Are",
         "description": "All fruit offer health benefits, so include as much variety as possible.",
         "ingredients": [
             "400 g spaghetti",
@@ -30,7 +30,7 @@
     {
         "recipe_image": "https://i.ibb.co/YNMg2J6/healthy-fruits.jpg",
         "recipe_id": 3,
-        "recipe_name": "Healthy Fruits That Are Super Nutritious",
+        "recipe_name": "Healthy chicken stir-fry",
         "description": "All fruit offer health benefits, so include as much variety as possible.",
         "ingredients": [
             "400 g spaghetti",
@@ -38,13 +38,13 @@
             "50 g pine nuts",
             "100 g Parmesan cheese"
         ],
-        "preparing_time": "25 min",
-        "calories": "580 calories"
+        "preparing_time": "30 min",
+        "calories": "390 calories"
     },
     {
         "recipe_image": "https://i.ibb.co/YNMg2J6/healthy-fruits.jpg",
         "recipe_id": 4,
-        "recipe_name": "Healthy Fruits That Are Super Nutritious",
+        "recipe_name": "Salt and pepper chicken",
         "description": "All fruit offer health benefits, so include as much variety as possible.",
         "ingredients": [
             "400 g spaghetti",
@@ -52,7 +52,7 @@
             "50 g pine nuts",
             "100 g Parmesan cheese"
         ],
-        "preparing_time": "25 min",
-        "calories": "580 calories"
+        "preparing_time": "45 min",
+        "calories": "450 calories"
     }
 ]

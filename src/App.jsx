@@ -16,7 +16,8 @@ function App() {
     },[])
 // item add function
     const handleCard = (p) => {
-      const isExist = cart.find(item => item.id == p.id);
+      // setCart([...cart,p]);
+      const isExist = cart.find(pd => pd.recipe_id === p.recipe_id);
         if(!isExist){
           setCart([...cart,p])
         }
@@ -24,10 +25,11 @@ function App() {
           alert('Item is already selected')
         }
     }
-
+  
     // item remove function
 const handleDelete = (id) =>{
-  console.log(id);
+  const newCart = cart.filter(item => item.recipe_id != id);
+  setCart(newCart);
 }
   return (
     <>
@@ -35,8 +37,8 @@ const handleDelete = (id) =>{
       <Recipe 
       recipe={recipe}
       key={recipe.id}
-      handleCard = {handleCard}
       cart={cart}
+      handleCard = {handleCard}
       handleDelete = {handleDelete}
       ></Recipe>
       

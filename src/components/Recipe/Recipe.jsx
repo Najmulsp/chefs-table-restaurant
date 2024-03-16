@@ -64,26 +64,30 @@ const Recipe = ({recipe, handleCard, cart, handleDelete}) => {
                 </div> */}
             </div>
             <div className="border border-purple-700 w-2/5 bg-teal-50 rounded-2xl space-y-4">
-                <h1 className="text-2xl py-4">Want to cook: {}</h1>
+                <h1 className="text-2xl py-4">Want to cook: {cart.length}</h1>
                 <hr />
-                <table className="">
-                    <thead className="flex justify-start space-x-12 pl-16">
+                <table className="flex flex-col space-y-6 ">
+                    <thead className="flex justify-start space-x-12 pl-28">
                         <th >Name</th>
                         <th>Time</th>
                         <th>Calories</th>
                     </thead>
 
-                    <tr className="flex justify-center pl-1">
+                    <tr className="space-y-6 px-2 ">
+                        
                         {
                             cart.map((item,index) => 
                                 (
                                     <>
+                                   <tr className='border space-x-8 flex items-center py-4 bg-slate-200 rounded-xl px-2'>
                                     <td>{index+1}</td>
-                        <td>{item.recipe_name}</td>
+                        <td className='border'>{item.recipe_name}</td>
                         <td>{item.preparing_time}</td>
                         <td>{item.calories}</td>
-                        <button onClick={() => handleDelete(item.id)} className='bg-emerald-400 w-48 rounded-full'>Preparing</button>
+                        <button onClick={() => handleDelete(item.recipe_id)} className='bg-emerald-400 w-32 rounded-full  '>Preparing</button>
+                        </tr>    
                         </>
+                        
                         
                                 )
                                 )

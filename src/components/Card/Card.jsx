@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Card = ({product, handleCard}) => {
     const {recipe_image, recipe_name, description, preparing_time, calories} = product;
-
+console.log(product)
     return (
         <div>
             <div className="card card-compact w-80 bg-base-100     shadow-xl">
