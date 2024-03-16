@@ -7,6 +7,7 @@ import Recipe from './components/Recipe/Recipe'
 function App() {
     const [recipe, setRecipe] = useState([]);
     const [cart, setCart] = useState([]);
+    // const [cooking, setCooking] = useState([]);
 
     useEffect(() => {
       fetch('./../public/Foods.json')
@@ -16,7 +17,7 @@ function App() {
     },[])
 // item add function
     const handleCard = (p) => {
-      // setCart([...cart,p]);
+      
       const isExist = cart.find(pd => pd.recipe_id === p.recipe_id);
         if(!isExist){
           setCart([...cart,p])

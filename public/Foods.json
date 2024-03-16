@@ -1,8 +1,8 @@
 [
     {
-        "recipe_image": "https://i.ibb.co/YNMg2J6/healthy-fruits.jpg",
+        "recipe_image": "https://i.ibb.co/NmykWFH/pasta.webp",
         "recipe_id": 1,
-        "recipe_name": "Family Favorite Salad Recipe!",
+        "recipe_name": "Healthy & tasty salmon pasta",
         "description": "A delicious chicken dish with a savory soy sauce glaze and sautéed mushrooms.",
         "ingredients": [
             "550 g chicken",
@@ -14,9 +14,9 @@
         "calories": "320 calories"
     },
     {
-        "recipe_image": "https://i.ibb.co/YNMg2J6/healthy-fruits.jpg",
+        "recipe_image": "https://i.ibb.co/VvkDt1k/Healthy-vagetables.webp",
         "recipe_id": 2,
-        "recipe_name": "Healthy Fruits That Are",
+        "recipe_name": "Healthy vegetables with Penne",
         "description": "All fruit offer health benefits, so include as much variety as possible.",
         "ingredients": [
             "400 g spaghetti",
@@ -28,9 +28,9 @@
         "calories": "580 calories"
     },
     {
-        "recipe_image": "https://i.ibb.co/YNMg2J6/healthy-fruits.jpg",
+        "recipe_image": "https://i.ibb.co/TT5xLn2/Lemon-chicken-ca35d95.webp",
         "recipe_id": 3,
-        "recipe_name": "Healthy chicken stir-fry",
+        "recipe_name": "Easy lemon chicken breasts",
         "description": "All fruit offer health benefits, so include as much variety as possible.",
         "ingredients": [
             "400 g spaghetti",
@@ -42,7 +42,7 @@
         "calories": "390 calories"
     },
     {
-        "recipe_image": "https://i.ibb.co/YNMg2J6/healthy-fruits.jpg",
+        "recipe_image": "https://i.ibb.co/dPMMmpv/salt-pepper-chicken.webp",
         "recipe_id": 4,
         "recipe_name": "Salt and pepper chicken",
         "description": "All fruit offer health benefits, so include as much variety as possible.",

@@ -1,4 +1,4 @@
-//  import bg from '../../assets/bg.jpg';
+
 
 const Header = () => {
     return (
@@ -38,14 +38,10 @@ const Header = () => {
     </div>
 </div>
 
-{/* <div className="bg-[linear-gradient(45deg, rgba(0,0,0,0,0.1),rgba(0,0,0,0,0.1)),url(../../assets/banner image.jpeg)]  w-full border h-96">
- <div className="bg-[url('../../assets/banner image.jpeg')] w-full border h-96"> 
-</div> */}
+
 
 <div className="hero min-h-screen bg-[url(https://i.ibb.co/y0mgRw2/bg.jpg)] mt-8 " >
-  {/* "background-image: url('...'); height: 400px"
-  style="background-image: url(https://i.ibb.co/y0mgRw2/bg.jpg);"
-  */}
+
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
