@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 
-const Recipe = ({recipe, handleCard, cart, handleDelete}) => {
+const Recipe = ({recipe, handleCard, cart, handleDelete, cooking}) => {
     const {recipe_name, preparing_time, calories} = cart;
   
     return (
@@ -41,7 +41,7 @@ const Recipe = ({recipe, handleCard, cart, handleDelete}) => {
                         <td className='border'>{item.recipe_name}</td>
                         <td>{item.preparing_time}</td>
                         <td>{item.calories}</td>
-                        <button onClick={() => handleDelete(item.recipe_id)} className='bg-emerald-400 w-32 rounded-full  '>Preparing</button>
+                        <button onClick={() => handleDelete(item)} className='bg-emerald-400 w-32 rounded-full  '>Preparing</button>
                         </tr>    
                         </>
                         
@@ -54,18 +54,28 @@ const Recipe = ({recipe, handleCard, cart, handleDelete}) => {
 
                 
                 <div>
-                <h1 className="text-2xl py-4">Currently cooking:{cart.length}</h1>
+                <h1 className="text-2xl py-4">Currently cooking:{cooking.length}</h1>
                 <hr />
 
                 <table>
-                <thead className="flex justify-start space-x-12 pl-28 space-y-6">
+                <thead className="flex justify-start space-x-20 pl-28 space-y-6">
                         <th className='mt-6'>Name</th>
                         <th>Time</th>
                         <th>Calories</th>
                     </thead>
 
                     <div >
+                        <div>
+                            {cooking.map((cook,index) => <div key={cook.recipe_id} className='flex items-center gap-10 py-6 bg-slate-200 px-6 ml-4 rounded-xl mt-6'>
+                                <p>{index+1}</p>
+                               <p className='w-32 text-center'> {cook.recipe_name}</p>
+                               <p> {cook.preparing_time}</p>
+                               <p> {cook.calories}</p>
+                            </div>)}
+                        </div>
+                        <div>
 
+                        </div>
                     </div>
                 </table>
                 </div>
@@ -76,10 +86,11 @@ const Recipe = ({recipe, handleCard, cart, handleDelete}) => {
 };
 
 Recipe.propTypes = {
-    recipe: PropTypes.object.isRequired,
-     cart: PropTypes.object.isRequired,
+    recipe: PropTypes.array.isRequired,
+     cart: PropTypes.array.isRequired,
      handleCard: PropTypes.func,
-     handleDelete: PropTypes.func
+     handleDelete: PropTypes.func,
+     cooking:PropTypes.array.isRequired
      
 }
 export default Recipe;

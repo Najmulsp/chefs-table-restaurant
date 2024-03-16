@@ -28,7 +28,12 @@ const Header = () => {
     </div>
     <div className="navbar-end gap-6">
     <div className="form-control">
-        <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto"/>
+        <div className="relative">
+        <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto pl-10"/>
+        <span className="absolute left-2 top-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 20.9998L15.803 15.8028M15.803 15.8028C17.2096 14.3962 17.9998 12.4885 17.9998 10.4993C17.9998 8.51011 17.2096 6.60238 15.803 5.19581C14.3964 3.78923 12.4887 2.99902 10.4995 2.99902C8.51029 2.99902 6.60256 3.78923 5.19599 5.19581C3.78941 6.60238 2.99921 8.51011 2.99921 10.4993C2.99921 12.4885 3.78941 14.3962 5.19599 15.8028C6.60256 17.2094 8.51029 17.9996 10.4995 17.9996C12.4887 17.9996 14.3964 17.2094 15.803 15.8028Z" stroke="#150B2B" strokeOpacity="0.7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+</svg></span>
+        </div>
         </div>
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="48" height="48" rx="24" fill="#0BE58A"/>

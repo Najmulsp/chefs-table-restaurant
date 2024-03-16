@@ -7,7 +7,7 @@ import Recipe from './components/Recipe/Recipe'
 function App() {
     const [recipe, setRecipe] = useState([]);
     const [cart, setCart] = useState([]);
-    // const [cooking, setCooking] = useState([]);
+    const [cooking, setCooking] = useState([]);
 
     useEffect(() => {
       fetch('./../public/Foods.json')
@@ -29,8 +29,10 @@ function App() {
   
     // item remove function
 const handleDelete = (id) =>{
-  const newCart = cart.filter(item => item.recipe_id != id);
+  const newCart = cart.filter(item => item.recipe_id != id.recipe_id);
   setCart(newCart);
+  const cookingCart = [...cooking, id];
+  setCooking(cookingCart)
 }
   return (
     <>
@@ -39,6 +41,7 @@ const handleDelete = (id) =>{
       recipe={recipe}
       key={recipe.id}
       cart={cart}
+      cooking={cooking}
       handleCard = {handleCard}
       handleDelete = {handleDelete}
       ></Recipe>
