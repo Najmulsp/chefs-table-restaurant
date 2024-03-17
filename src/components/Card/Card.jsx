@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 
 const Card = ({product, handleCard}) => {
     const {recipe_image, recipe_name, description, preparing_time, calories} = product;
-console.log(product)
+
     return (
         <div>
-            <div className="card card-compact w-80 bg-base-100     shadow-xl">
+            <div className="card card-compact w-96 lg:w-80  ml-6 lg:ml-0   shadow-xl bg-base-100">
                         <figure><img className="p-1 rounded-xl " src={product.recipe_image} alt="Shoes" /></figure>
                     <div className="card-body text-left">
                         <h2 className="card-title">{product.recipe_name}</h2>
@@ -42,7 +42,7 @@ console.log(product)
                             </div>
                         </div>
                         <div className="card-actions justify-start ">
-                            <button onClick={() =>handleCard(product)} className="btn btn-primary rounded-full w-40 bg-green-400">Want to Cook</button>
+                            <button onClick={() =>handleCard(product)} className="btn  rounded-full w-40 bg-green-400 text-black">Want to Cook</button>
                         </div>
                     </div>
                 </div>
